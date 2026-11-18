@@ -8,7 +8,7 @@ Aplicação web local para cadastro de livros e exemplares, circulação por tur
 - Python na versão validada pelo desenvolvedor.
 - Navegador atualizado.
 
-Versão do Python utilizada: [# Sistema de Biblioteca Escolar
+Versão do Python utilizada: [3.13.7]
 
 Aplicação web local para cadastro de livros e exemplares, circulação por turma, histórico e inventário.
 
@@ -77,12 +77,6 @@ Acessar:
 http://127.0.0.1:8080
 
 Para encerrar, pressionar `Ctrl + C` na janela do servidor.
-
-## Testes automatizados
-
-```powershell
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
-```
 
 ## Dados
 
