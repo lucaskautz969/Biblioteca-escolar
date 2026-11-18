@@ -1,0 +1,41 @@
+# Ambiente virtual
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Dados locais e banco
+/instance/
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.db-wal
+*.db-shm
+
+# Capas cadastradas
+/static/capas/*
+
+# Backups e arquivos temporários
+/backups/
+/_atualizacoes_backup/
+/exportacoes/
+*.zip
+*.log
+*.partial
+
+# Configurações privadas
+.env
+.env.*
+!.env.example
+
+# Arquivos locais
+.vscode/
+Thumbs.db
+.DS_Store

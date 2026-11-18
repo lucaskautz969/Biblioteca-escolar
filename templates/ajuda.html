@@ -1,0 +1,72 @@
+{% extends 'base.html' %}{% block conteudo %}
+<h1>Ajuda rápida</h1>
+<section class="painel">
+  <h2>1. Preparar o acervo</h2>
+  <p>
+    Cadastre categorias, turmas/séries e localizações em Cadastros e
+    ferramentas. Depois cadastre livros e seus exemplares. ISBN identifica uma
+    edição; código/tombo identifica uma cópia física. Não inclua nomes de
+    estudantes.
+  </p>
+  <h2>2. Retirar, devolver ou reservar</h2>
+  <p>
+    Nos detalhes do livro ou em Exemplares/circulação, marque uma ou várias
+    cópias, escolha a operação e, quando necessário, a turma. Previsão de
+    devolução é opcional e não gera multas. Confira e confirme na próxima tela.
+    Conflito em um item bloqueia o lote inteiro.
+  </p>
+  <p>
+    Para devolução parcial, marque somente as cópias que voltaram. O uso atual é
+    limpo, mas o movimento fica no histórico. A data/hora é a do computador.
+  </p>
+  <h2>3. Reservas</h2>
+  <p>
+    Reserva simples por exemplar disponível e turma, sem fila ou expiração
+    automática. Na retirada, use a turma da reserva ou cancele-a antes de mudar
+    o destino.
+  </p>
+  <h2>4. Histórico</h2>
+  <p>
+    Consulte por livro, turma e período de retirada. Os dados da obra, código e
+    turma são guardados como estavam na retirada. Mudar nomes depois não
+    reescreve o passado. Usos antigos ainda abertos são identificados na
+    migração; devoluções anteriores à versão 3 não podem ser reconstruídas.
+  </p>
+  <h2>5. Inventário</h2>
+  <p>
+    Abra uma conferência e marque os itens encontrados. O inventário guarda a
+    lista e os estados da abertura, não muda circulação nem dá baixa. Pendente
+    não significa perdido. Se encontrar um exemplar em outra estante, registre o
+    local observado e corrija o cadastro separadamente se necessário.
+  </p>
+  <h2>6. Arquivar, dar baixa ou excluir</h2>
+  <p>
+    Arquivar oculta o livro sem apagar. Baixa retira a disponibilidade do
+    exemplar e preserva registros. Exclusão é definitiva e fica bloqueada se
+    houver uso, reserva, histórico ou vínculo de inventário aplicável. Prefira
+    baixa/arquivamento.
+  </p>
+  <h2>7. Relatórios</h2>
+  <p>
+    Os filtros determinam a exportação e a impressão. Abrir impressão de todos
+    os resultados inclui todas as páginas. Na janela de impressão do navegador,
+    você pode escolher salvar como PDF, se disponível. Não há gerador próprio de
+    PDF nem etiquetas.
+  </p>
+  <h2>8. Backup e encerramento</h2>
+  <p>
+    Conclua operações, pare o servidor com Ctrl+C e execute backup.py pelo
+    Python do ambiente. Copie o ZIP para outro local autorizado e teste
+    restauração. Banco e capas precisam estar no backup. Fechar o navegador não
+    encerra o servidor.
+  </p>
+  <h2>9. Segurança e privacidade</h2>
+  <p>
+    Sem login: qualquer pessoa com acesso ao computador pode alterar dados.
+    Mantenha uso apenas em 127.0.0.1, com proteção da conta Windows e backups.
+    Histórico contém turmas/séries, não pessoas. Defina com a escola por quanto
+    tempo manter banco e backups; esta versão não apaga o histórico
+    automaticamente.
+  </p>
+</section>
+{% endblock %}
